@@ -1,7 +1,7 @@
-Code Book
+#Code Book
 This code book describes the variables, data, and transformations performed to clean up the data for the project Getting and Cleaning Data in the Coursera Data Science course.
 
-Raw data collection
+#Raw data collection
 Collection
 Raw data are obtained from UCI Machine Learning repository:http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones.
 Data Set Information
@@ -16,7 +16,7 @@ Its activity label.
 An identifier of the subject who carried out the experiment.
 See Readme file for more information.
 
-Raw Data transformation
+#Raw Data transformation
 The raw data sets are processed with the script run_analysis.R script to create a tidy data set. 
 The script receives three parameters:
 The directory where the input files are located
@@ -34,7 +34,7 @@ From the new data set calculates the summarized information by subject and activ
 Writes a second data set with the summarized information
 
 
-Tidy data set
+#Tidy data set
 Observations
 The observations consist on :
 an identifier of the subject who carried out the experiment (Subject). Its range is from 1 to 30. 
