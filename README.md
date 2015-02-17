@@ -1,2 +1,2 @@
 # getting-and-cleaning-data
-Getting and Cleaning Data COURSERA
+Getting and Cleaning Data COURSERA Project
