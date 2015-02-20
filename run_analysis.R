@@ -70,12 +70,9 @@ run_analysis <- function(directory, resultfile, summarizedfile) {
 #Select the values to aggregate
       vSubTotalData<-vtotdata[vtotdata$Subject==j,]
       vSubTotalData<- vSubTotalData[vSubTotalData$DescActivity==activity_labels[i,2],]
-      find.numeric <- sapply(vSubTotalData, is.numeric)
 #Calculate the menas of the columns
-      #vMeansColumns<-colMeans(vSubTotalData[, find.numeric])
       vMeansColumns<-colMeans(vSubTotalData[, 3:ncol(vSubTotalData)])
       vAux<-vSubTotalData[1,]
-      #vAux[,3:length(vAux)]<-vMeansColumns[2:length(vMeansColumns)]
       vAux[,3:length(vAux)]<-vMeansColumns
 #Generate the data frame with the information summarized
       if (j==1 && i==1)
