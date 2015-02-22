@@ -44,13 +44,15 @@ The observations consist on :
 
 ##Variables
 The name convention for the variables included in the results data sets is like the following:
-prefix: 't', to denote time, 'f', to denote frequency
-measurement: what was calculated. The name is composed by parts:
-Body or Gravity
-(Acc)elerometer or (Gyro)scope
-Not derived in time or derived in time (Jerk) or (Mag)nitude
--mean/std: mean or standard deviation of the measurement
--X/Y/Z: one direction of a 3-axial signal 
++prefix: 't', to denote time, 'f', to denote frequency
++measurement: what was calculated. The name is composed by parts:
+	-Body or Gravity
+	-(Acc)elerometer or (Gyro)scope
+	-Not derived in time or derived in time (Jerk) or (Mag)nitude
++mean/std: mean or standard deviation of the measurement
++X/Y/Z: one direction of a 3-axial signal
+The units are radians/second
+
 The second tidy data set contains :
 an identifier of the subject who carried out the experiment (Subject). Its range is from 1 to 30. 
 an activity label (Activity): WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING 
