@@ -2,12 +2,12 @@
 This code book describes the variables, data, and transformations performed to clean up the data for the project Getting and Cleaning Data in the Coursera Data Science course.
 
 #Raw data collection
-Collection
+##Collection
 Raw data are obtained from UCI Machine Learning repository:http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones.
-Data Set Information
+##Data Set Information
 The experiments have been carried out with a group of 30 volunteers within an age bracket of 19-48 years. Each person performed six activities (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING) wearing a smartphone (Samsung Galaxy S II) on the waist. Using its embedded accelerometer and gyroscope, they captured 3-axial linear acceleration and 3-axial angular velocity at a constant rate of 50Hz. The experiments have been video-recorded to label the data manually. The obtained dataset has been randomly partitioned into two sets, where 70% of the volunteers was selected for generating the training data and 30% the test data.
 The sensor signals (accelerometer and gyroscope) were pre-processed by applying noise filters and then sampled in fixed-width sliding windows of 2.56 sec and 50% overlap (128 readings/window). The sensor acceleration signal, which has gravitational and body motion components, was separated using a Butterworth low-pass filter into body acceleration and gravity. The gravitational force is assumed to have only low frequency components, therefore a filter with 0.3 Hz cutoff frequency was used. From each window, a vector of features was obtained by calculating variables from the time and frequency domain.
-Attribute Information:
+##Attribute Information:
 For each record in the dataset it is provided:
 Triaxial acceleration from the accelerometer (total acceleration) and the estimated body acceleration. 
 Triaxial Angular velocity from the gyroscope. 
@@ -36,13 +36,13 @@ The steps followed were:
 +The resulting data set is written to the file indicated in the third parameter.
 
 #Tidy data set
-Observations
+##Observations
 The observations consist on :
 +an identifier of the subject who carried out the experiment (Subject). Its range is from 1 to 30. 
 +an activity label (Activity): WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING 
 +a series of measurements collected from the sensors signals
 
-Variables
+##Variables
 The name convention for the variables included in the results data sets is like the following:
 prefix: 't', to denote time, 'f', to denote frequency
 measurement: what was calculated. The name is composed by parts:
@@ -51,13 +51,11 @@ Body or Gravity
 Not derived in time or derived in time (Jerk) or (Mag)nitude
 -mean/std: mean or standard deviation of the measurement
 -X/Y/Z: one direction of a 3-axial signal 
-
 The second tidy data set contains :
 an identifier of the subject who carried out the experiment (Subject). Its range is from 1 to 30. 
 an activity label (Activity): WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING 
 mean of all other variables are measurement collected from the accelerometer and gyroscope 3-axial raw signal (numeric value)
 The variable name convention follows the rules described above.
-
 
 This is the list of variables:
  [1] "DescActivity"                         "Subject"                             
