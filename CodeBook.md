@@ -28,8 +28,8 @@ Load training, test , features, subjects and activity sets.
 Set features labels to training and test data sets columns names 
 Add a new column to activity data set with the description
 Extract mean and standard deviation variables from training and test sets to create two new data sets. 
-Merge training and test sets. As test and training data have the same structure and as we know that the subjects were 'randomly separated' actually is not a merge but the files were concatenated
-Writes a tidy data set with the structure processed
+Merge training and test sets.Â As test and training data have the same structure and as we know that the subjects were 'randomly separated' actually is not a merge but the files were concatenated
+Writes a tidy data setÂ with the structure processed
 The first tidy data set is written to the file indicated in the second parameter.
 From the new data set calculates the summarized information by subject and activity creating a new data set
 Writes a second data set with the summarized information.
@@ -58,6 +58,7 @@ an identifier of the subject who carried out the experiment (Subject). Its range
 an activity label (Activity): WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING 
 mean of all other variables are measurement collected from the accelerometer and gyroscope 3-axial raw signal (numeric value)
 The variable name convention follows the rules described above.
+
 
 This is the list of variables:
  [1] "DescActivity"                         "Subject"                             
